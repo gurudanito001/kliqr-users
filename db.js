@@ -8,7 +8,7 @@ const pool = new Pool({
     user: "postgres",
     password: "nwokocha95",
     database: "kliqr_users",
-    host: "localhost",
+    host: "https://sheltered-bastion-74511.herokuapp.com",
     port: "5432"
 });
 
