@@ -1,6 +1,6 @@
 CREATE DATABASE kliqr_users;
 
---\c into kliqr_users
+--\c into todo_database
 
 CREATE TABLE users(
     id INTEGER PRIMARY KEY,

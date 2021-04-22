@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const pool = require("./db");
+const config = require("./config");
 
 app.use(express.json()) // => req.body
 
@@ -45,6 +46,6 @@ app.get('/db', async (req, res) => {
 })
 
 
-app.listen( 5000, () => {
-    console.log(`server is listening on port 5000`)
+app.listen( config.PORT, () => {
+    console.log(`server is listening on port ${config.PORT}`)
 });
