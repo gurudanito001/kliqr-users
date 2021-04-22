@@ -32,7 +32,7 @@ app.get("/users/:id", async (req, res) => {
     }
 });
 
-app.get('/db', async (req, res) => {
+/* app.get('/db', async (req, res) => {
     try {
         const client = await pool.connect();
         const result = await client.query('SELECT * FROM users');
@@ -43,7 +43,7 @@ app.get('/db', async (req, res) => {
         console.error(err);
         res.send("Error " + err);
     }
-}) 
+})  */
 
 
 app.listen( config.PORT, () => {
